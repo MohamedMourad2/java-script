@@ -1,0 +1,32 @@
+### **1. What is the difference between forEach and for...of? When would you use each?**
+
+- **forEach:** Executes a callback function for each element in an array. It does not support `break` or `continue`.
+- **for...of:** Iterates over iterable objects and allows using `break` and `continue`.
+
+Use `forEach` for simple array iteration and `for...of` when you need more control over the loop.
+
+
+### **2. What is hoisting and what is the Temporal Dead Zone (TDZ)?**
+
+- **Hoisting:** JavaScript moves variable and function declarations to the top of their scope during the compilation phase.
+- **TDZ:** The period between entering a scope and initializing a `let` or `const` variable, during which accessing the variable causes a ReferenceError.
+
+
+### **3. What are the main differences between == and ===?**
+
+- **== (Loose Equality):** Compares two values after performing type conversion if necessary.
+- **=== (Strict Equality):** Compares both value and data type without performing type conversion.
+
+
+### **4. Explain how try-catch works and why it is important in async operations.**
+
+- **try:** Contains code that may cause an error.
+- **catch:** Handles errors thrown inside the try block.
+
+In async operations, try-catch is important because it handles rejected Promises when used with `async/await`, preventing unexpected program termination and allowing errors to be handled properly.
+
+
+### **5. What’s the difference between type conversion and coercion?**
+
+- **Type Conversion:** Explicitly changing a value from one data type to another by the programmer.
+- **Type Coercion:** Automatically converting a value from one data type to another by JavaScript during operations.
